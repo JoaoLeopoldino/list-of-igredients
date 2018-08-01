@@ -2,7 +2,7 @@ class DrinksController < ApiController
 
   # GET /drinks
   def index
-    @drinks = Drink.slect("id, title").all
+    @drinks = Drink.select("id, title").all
 
     render json: @drinks.to_json
   end
